@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aduino Controll</title>
+    <link rel="stylesheet" href="/static/css/slider.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/warning.css">
+</head>
+<body>
+    <title>
+        Aduino Controll
+    </title>
+    <h1>Welcome to Aduino Controll</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <h1 class="warning">{{ message }}</h1>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+      </div>
+    <form action="{{ url_for("login")}}" method="post">
+        <p>Username: </p>
+        <input type="text" id="user" name="user">
+        <p>Passwort</p>
+        <input type="password" id="pwd" name="psswrd">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
