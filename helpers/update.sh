@@ -1,6 +1,6 @@
 sudo apt update && apt upgrade
 sudo apt install git
-git clone https://github.com/Tech08mag/AR.git
+git clone https://github.com/damianschepers/Arduino-Raspberrypi.git
 ls -l
 cd AR
 python3 -m venv .venv
